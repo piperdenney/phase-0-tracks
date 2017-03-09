@@ -1,9 +1,7 @@
 #Hamsters
 
-
 puts "What is your hamster's name?"
 hamster_name = gets.chomp
-
 puts "What is your #{hamster_name}'s volume level (1-10)"
 volume_level = gets.to_i
 while volume_level  >= 11 || volume_level < 0
@@ -41,3 +39,5 @@ if estimated_age == nil
 else
   puts "The hamster age is estimated to be #{estimated_age}"
 end
+
+
