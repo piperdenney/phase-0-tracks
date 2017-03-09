@@ -32,4 +32,12 @@ else
   estimated_age = estimated_age.to_i
 end
 
-p estimated_age
+puts "The name of the hamster is #{hamster_name}"
+puts "The volume level of the hamster is #{volume_level}"
+puts "The hamster fur color is #{fur_color}"
+puts "The hamster is a #{user_input} candidate for adoption"
+if estimated_age == nil
+  puts "The hamster age is unknown"
+else
+  puts "The hamster age is estimated to be #{estimated_age}"
+end
