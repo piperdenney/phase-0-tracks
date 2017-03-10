@@ -1,0 +1,25 @@
+
+body {
+	font-family: georgia;
+}
+
+
+
+
+
+.column-1 {
+	background-color: lavender;
+	display: inline-block;
+	width: 49%;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.column-2 {
+	background-color: tan;
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+	padding: 15px;
+	box-sizing: border-box;
+}
