@@ -1,25 +1,43 @@
 
 body {
 	font-family: georgia;
+	/*background-image: url("gps2.1_photo.png")*/
 }
 
+header {
+	border: 2px solid black; 
+	background-color: lightgrey;
+	margin-right: 23px;
+}
 
-
+h1 {
+	text-align: center;
+}
 
 
 .column-1 {
 	background-color: lavender;
-	display: inline-block;
-	width: 49%;
-	padding: 15px;
-	box-sizing: border-box;
+	/*display: inline-block;*/
+	/*width: 49%;*/
+	/*padding: 15px;*/
+	/*box-sizing: border-box;*/
 }
 
 .column-2 {
 	background-color: tan;
-	display: inline-block;
+	padding-bottom: 21px;
+	/*display: inline-block;
 	width: 49%;
 	vertical-align: top;
 	padding: 15px;
+	box-sizing: border-box;*/
+}
+
+section {
+	display: inline-block;
+	width: 49%;
+	padding: 15px;
 	box-sizing: border-box;
+	vertical-align: top;
+	border: dotted black;
 }
