@@ -1,0 +1,53 @@
+#Vampires
+#Write a progam that asks a new employee questions
+
+#Ask employee for their name
+puts "What is your name?"
+#name equals user input
+name = gets.chomp
+
+#Ask for age
+puts "How old are you?"
+#listed age is gets.chomp to integer
+supposed_age = gets.chomp.to_i
+
+#Ask year born
+puts "What year were you born?"
+#year of birth is user input to integer
+yob = gets.chomp.to_i
+
+#Variable that gives real age (current year - employee's year of birth)
+real_age = 2017 - yob
+
+#If statement that verifies that age given is equal to real age
+if real_age == supposed_age
+  age_verified = true
+else 
+  age_verified = false
+end
+
+puts "Our company cafeteria serves garlic bread. Should we order some for you?"
+likes_garlic = gets.chomp
+if likes_garlic == "yes" || likes_garlic == "y"
+  likes_garlic = true
+else 
+  likes_garlic = false
+end
+
+puts "Would you like to enroll in the company's health insurance?"
+wants_insurance = gets.chomp
+if wants_insurance == "yes" || wants_insurance == "y"
+  wants_insurance = true
+else wants_insurance = false
+end
+
+
+
+
+
+
+#DRIVER CODE TESTING
+# p real_age
+# p age_verified
+# p likes_garlic
+# p wants_insurance
