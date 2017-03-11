@@ -1,0 +1,78 @@
+#Elevator Directions for a Robot
+
+1. Find the Elevator.
+2. Stand facing the elevator doors.
+3. Figure out what floor you are on.
+4. Figure out what floor you want to be on.
+5. If the floor you are on has a number lower than the number of the floor you want to be on, then you want to go up. If the floor you are on has a number higher than the number of the floor you want to be on, then you want to go down.
+6. Locate the two buttons with arrows on them.
+7. Raise your arm 
+8. extend your finger
+* If you want to go up:
+	9. press the button with the arrow pointing up using your finger
+* If you want to go down:
+	9. press the button with the arrow pointing down using your finger
+9. Wait for the elevator doors to open.
+10. When the elevator doors have opened, walk into the elevator.
+11. Once inside the elevator, turn around to face the doors again.
+12. Locate the buttons on the wall next to the doors.
+13. Raise your arm.
+14. Extend your finger.
+15.Touch the button with the number that is equal to the number of the floor you want to be on. 
+16. Take a step back.
+17. Face the doors.
+18. Wait for the elevator doors to open.
+19. When the doors have opened, look at the button panel.
+20. 
+	*If the button with your floor number is lit up, exit the elevator.
+	*If the button with your floor number is not lit up, stay on the elevator and repeat step 19 until the button with your floor number lights up, then exit the elevator.
+21. Yay, you used the elevator!
+
+#Directions for Boiling Water for Coffee. 
+
+1. Locate the kitchen.
+2. Walk to the kitchen.
+3. Face the stove.
+4. Raise your arm.
+5. Extend your fingers.
+6. Locate the kettle.
+7. User your hand to wrap your fingers around the handle and apply pressure.
+8. Lift your arm.
+9. Walk towards the sink.
+10. Face the sink.
+11. Raise your arm that is not holding the kettle
+12. Put your thumb and pointer finger on the kettle lid.
+13. Lift the kettle lid open.
+14. Move your hand away from the kettle lid and put your arm down.
+15. Raise your arm that is holding the kettle 
+16. Position the kettle opening directly under the faucet and hold it there.
+17. Raise your arm that is not holding the kettle.
+16. Open your hand and put it around the sink handle on the right side of the sink.
+17. Apply pressure with your hand and pull the handle towards your body until water flows from the faucet.
+18. Make sure that the water is going into the kettle.
+19. Hold the kettle under the water until the kettle is half full with water.
+20. When the kettle is half full with water, Raise your hand that is not holding the kettle.
+21. Open your hand and put it around the sink handle on the right side of the sink.
+22. Apply pressure with your hand and push the handle away from your body until water ceases to flow from the faucet.
+23. Move your arm towards the kettle.
+24. Put your thumb and pointer finger on the kettle lid.
+25. Move the kettle lid back down until it is closed.
+26. Locate the stove
+27. Stand facing the stove.
+28. Raise the arm that is holding the kettle and place the kettle on the burner closest to you on the right hand side.
+29. Release your hand from the handle of the kettle. 
+30. Raise your arm.
+31. Extend your fingers.
+32. Locate the knob on the very right of the stove.
+33. Use your thumb, pointer finger and middle finger to hold the knob. 
+34. While holding the knob, rotate your wrist to the right until you hear a clicking sound.
+35. If the burner does not light with fire, rotate your wrist back to the left and repeat step 34 until the burner is lit with fire. 
+36. Twiddle your thumbs and leave the kettle on the stove until you hear a high pitched whistling sound. Do not watch the kettle because a watched pot never boils.
+37. When you hear the high pitched whistling sound:
+38. Raise your arm.
+39. Extend your fingers.
+40. Locate the knob on the very right of the stove.
+41. Use your thumb, pointer finger and middle finger to hold the knob. 
+42. While holding the knob, rotate your wrist to the left until  the knob cannot turn anymore.
+43. Make sure that fire is not longer coming out of the stove! 
+44. Congratulations, you boiled water! 
