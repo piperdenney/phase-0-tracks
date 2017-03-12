@@ -62,7 +62,7 @@ end
 #Conditionals to determine results
 if name == "Drake Cula" || name == "Tu Fang"
   puts "Definitely a vampire."
-elsif allergy != "sunshine" || age_verified && (!likes_garlic && wants_insurance) || (likes_garlic && !wants_insurance)  
+elsif allergy != "sunshine" && age_verified && (!likes_garlic && wants_insurance) || (likes_garlic && !wants_insurance)  
   puts "Probably not a vampire."
 elsif allergy == "sunshine" || !age_verified && (!likes_garlic && wants_insurance) || (likes_garlic && !wants_insurance)
   puts "Probably a vampire!"
@@ -73,9 +73,9 @@ else
 end 
 
 employees_processed = employees_processed - 1 
-
 end
 
+p "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
 
 
 #DRIVER CODE TESTING
