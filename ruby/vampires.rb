@@ -47,14 +47,24 @@ if wants_insurance == "yes" || wants_insurance == "y"
 else wants_insurance = false
 end
 
+has_allergy = false
+until has_allergy
+#Ask employee about any allergies they may have
+  puts "List any allergies, one at a time. Type done when finished."
+  allergy = gets.chomp
+  if allergy == "sunshine" || allergy == "done"
+    has_allergy = true
+  else
+  end
+end
 
 
 #Conditionals to determine results
 if name == "Drake Cula" || name == "Tu Fang"
   puts "Definitely a vampire."
-elsif age_verified && (!likes_garlic && wants_insurance) || (likes_garlic && !wants_insurance)
+elsif allergy != "sunshine" || age_verified && (!likes_garlic && wants_insurance) || (likes_garlic && !wants_insurance)  
   puts "Probably not a vampire."
-elsif !age_verified && (!likes_garlic && wants_insurance) || (likes_garlic && !wants_insurance )
+elsif allergy == "sunshine" || !age_verified && (!likes_garlic && wants_insurance) || (likes_garlic && !wants_insurance)
   puts "Probably a vampire!"
 elsif !age_verified && !likes_garlic && !wants_insurance
   puts "Almost certainly a vampire."
