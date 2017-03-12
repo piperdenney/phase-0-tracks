@@ -43,6 +43,19 @@ end
 
 
 
+#Conditionals to determine results
+if name == "Drake Cula" || name == "Tu Fang"
+  puts "Definitely a vampire."
+elsif age_verified && (!likes_garlic && wants_insurance) || (likes_garlic && !wants_insurance)
+  puts "Probably not a vampire."
+elsif !age_verified && (!likes_garlic && wants_insurance) || (likes_garlic && !wants_insurance )
+  puts "Probably a vampire!"
+elsif !age_verified && !likes_garlic && !wants_insurance
+  puts "Almost certainly a vampire."
+else 
+  puts "Results inconclusive"
+end 
+
 
 
 
