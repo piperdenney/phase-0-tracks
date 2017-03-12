@@ -50,12 +50,12 @@ end
 has_allergy = false
 until has_allergy
 #Ask employee about any allergies they may have
-  puts "List any allergies, one at a time. Type done when finished."
-  allergy = gets.chomp
-  if allergy == "sunshine" || allergy == "done"
-    has_allergy = true
-  else
-  end
+puts "List any allergies, one at a time. Type done when finished."
+allergy = gets.chomp
+if allergy == "sunshine" || allergy == "done"
+  has_allergy = true
+else
+end
 end
 
 
