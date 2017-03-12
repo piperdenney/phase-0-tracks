@@ -31,17 +31,19 @@ if real_age == supposed_age
 else 
   age_verified = false
 end
-
+#Ask about garlic bread
 puts "Our company cafeteria serves garlic bread. Should we order some for you?"
 likes_garlic = gets.chomp
+#Conditional that says likes garlic is true or false
 if likes_garlic == "yes" || likes_garlic == "y"
   likes_garlic = true
 else 
   likes_garlic = false
 end
-
+#Ask if user wants insurance
 puts "Would you like to enroll in the company's health insurance?"
 wants_insurance = gets.chomp
+#Conditional to determine if want insurance is true or false
 if wants_insurance == "yes" || wants_insurance == "y"
   wants_insurance = true
 else wants_insurance = false
@@ -71,10 +73,11 @@ elsif !age_verified && !likes_garlic && !wants_insurance
 else 
   puts "Results inconclusive"
 end 
-
+#end of loop. Employees processed starts at number given, and subtracts one each time. 
 employees_processed = employees_processed - 1 
 end
 
+#Program closing line
 p "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
 
 
