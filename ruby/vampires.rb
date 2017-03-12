@@ -1,6 +1,12 @@
 #Vampires
-#Write a progam that asks a new employee questions
+#Write a program that asks a new employee intake questions about themselves. 
 
+#Ask how many employees will be processed. Then begin process for first employee. 
+#Loop survey until all employees have been processed.
+puts "How many employees will be processed?"
+employees_processed = gets.chomp.to_i
+count = 0
+until count >= employees_processed
 #Ask employee for their name
 puts "What is your name?"
 #name equals user input
@@ -56,6 +62,9 @@ else
   puts "Results inconclusive"
 end 
 
+employees_processed = employees_processed - 1 
+
+end
 
 
 
