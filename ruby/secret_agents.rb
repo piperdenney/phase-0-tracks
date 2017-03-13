@@ -1,8 +1,8 @@
 def encrypt(string)
   index = 0
   while index < string.length
-  string[index] = string[index].next
-  index += 1
+    string[index] = string[index].next
+    index += 1
   end
   p string
 end
@@ -25,19 +25,19 @@ def decrypt(string)
   index = 0
   new_string = ''
   while index < string.length
-  new_letter = alphabet[(alphabet.index(string[index])-1)]  
-  new_string += new_letter
-  index += 1
-end
-p new_string
+    new_letter = alphabet[(alphabet.index(string[index])-1)]  
+    new_string += new_letter
+    index += 1
+  end
+  p new_string
 end
 
 
 
 puts "Would you like to decrypt or encrypt a password?"
-  string = gets.chomp
+string = gets.chomp
 puts "Please enter your password"
-  password = gets.chomp
+password = gets.chomp
 
 
 if string == "encrypt"
