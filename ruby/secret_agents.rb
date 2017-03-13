@@ -7,7 +7,7 @@ def encrypt(string)
   p string
 end
 
-encrypt("short")
+# encrypt("short")
 
 # def decrypt(string)
 #   alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -34,10 +34,35 @@ end
 
 
 
+puts "Would you like to decrypt or encrypt a password?"
+  string = gets.chomp
+puts "Please enter your password"
+  password = gets.chomp
 
 
-decrypt("tipsu")
+if string == "encrypt"
+  puts encrypt(password)
+elsif string == "decrypt"
+  puts decrypt(password)
+else 
+  puts "Does not compute; please enter encrypt or decrypt."
+end
 
 
 
-#def decrypt(string)
+
+
+# decrypt("tipsu")
+
+# encrypt("abc")
+# encrypt("zed")
+# decrypt("bcd")
+# decrypt("afe")
+
+# #Ruby evaluates code in parentheses first, so it encrypts swordfish, and then decrypts.
+# decrypt(encrypt("swordfish"))
+
+
+
+
+
