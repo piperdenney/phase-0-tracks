@@ -20,6 +20,7 @@ until enters_quit == true #until the user enters quit
 #here's where the loop stops if they enter quit
 if name == "quit"
   enters_quit = true
+  p "Goodbye!"
 else 
 #next vowel method
 #define method (next_vowel)
