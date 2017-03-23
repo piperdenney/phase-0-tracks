@@ -1,5 +1,7 @@
 class Santa
 
+attr_reader :age, :ethnicity 
+attr_accessor :gender
   def initialize(gender, ethnicity)
     p "Initializing Santa instance..."
     @gender = gender
@@ -32,19 +34,19 @@ class Santa
     p @reindeer_ranking
   end 
 
-  #Setter Method for Gender
-  def gender=(new_gender)
-    @gender = new_gender
-  end 
+  # #Setter Method for Gender
+  # def gender=(new_gender)
+  #   @gender = new_gender
+  # end 
   
-  #Two Getter Methods
-  def age
-    @age
-  end
+  # #Two Getter Methods
+  # def age
+  #   @age
+  # end
 
-  def ethnicity
-    @ethnicity
-  end 
+  # def ethnicity
+  #   @ethnicity
+  # end 
 
 end
 
@@ -80,3 +82,5 @@ charles = Santa.new("queer", "black")
 charles.get_mad_at("Rudolph")
 charles.gender = "Latinx"
 charles.print_information
+p charles.ethnicity
+p charles.age 
