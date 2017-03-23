@@ -18,7 +18,13 @@ class Santa
 
   def print_information
     p "Gender: #{@gender} Ethnicity: #{@ethnicity}"
+    p "Age: #{@age}"
   end
+
+  def celebrate_birthday
+    @age = @age + 1
+  end 
+
 end
 
 # clause = Santa.new 
@@ -41,3 +47,10 @@ end
 santas.each do |i|
   i.print_information
 end
+santas.each do |i|
+  i.celebrate_birthday
+end 
+
+santas.each do |i|
+  i.print_information
+end 
