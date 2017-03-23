@@ -45,4 +45,4 @@ end
 
 #DRIVER CODE-------------------
 
-create_list("carrots apples cereal pizza")
+original_list = create_list("carrots apples cereal pizza")
