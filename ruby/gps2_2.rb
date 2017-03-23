@@ -24,8 +24,15 @@ end
 
 # Method to add an item to a list
 # input: list, item name, and optional quantity
-# steps:
-# output:
+# steps: 
+#1. Add new item to existing hash list using item name
+#2. Add quantity
+# output: hash
+
+def add_item(hash_list, new_item, quantity = 1)
+  hash_list[new_item] = quantity
+  p hash_list
+end
 
 # Method to remove an item from the list
 # input:
