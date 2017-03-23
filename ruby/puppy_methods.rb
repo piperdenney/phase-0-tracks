@@ -67,10 +67,20 @@ class Flower
 
 end
 
+#start count at 0
+flower_instances = 0
+#empty array called garden
+garden = []
+
+#until loop that goes until there are 50 instances of flower
+until flower_instances == 50 
+  #put flower instances into garden
+  garden[flower_instances] = Flower.new
+  flower_instances += 1
+end 
 
 
-pansy =  Flower.new
-
-pansy.photosynthesize
-pansy.respirate
+# pansy =  Flower.new
+# pansy.photosynthesize
+# pansy.respirate
 
