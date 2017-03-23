@@ -32,10 +32,19 @@ class Santa
     p @reindeer_ranking
   end 
 
+  #Setter Method for Gender
   def gender=(new_gender)
     @gender = new_gender
   end 
+  
+  #Two Getter Methods
+  def age
+    @age
+  end
 
+  def ethnicity
+    @ethnicity
+  end 
 
 end
 
