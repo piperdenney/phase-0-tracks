@@ -25,6 +25,13 @@ class Santa
     @age = @age + 1
   end 
 
+  def get_mad_at(reindeer_name)
+   #@reindeer_ranking.rotate!(@reindeer_ranking.index(reindeer_name))
+   @reindeer_ranking.delete(reindeer_name)
+   @reindeer_ranking.push(reindeer_name)
+    p @reindeer_ranking
+  end 
+
 end
 
 # clause = Santa.new 
@@ -54,3 +61,6 @@ end
 santas.each do |i|
   i.print_information
 end 
+ 
+charles = Santa.new("queer", "black")
+charles.get_mad_at("Rudolph")
