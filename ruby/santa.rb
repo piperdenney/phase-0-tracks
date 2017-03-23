@@ -7,7 +7,7 @@ attr_accessor :gender
     @gender = gender
     @ethnicity = ethnicity
     @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-    @age = 0
+    @age = rand(0..140) 
   end
 
   def speak
@@ -24,7 +24,8 @@ attr_accessor :gender
   end
 
   def celebrate_birthday
-    @age = @age + 1
+    @age += 1
+    @age
   end 
 
   def get_mad_at(reindeer_name)
@@ -78,9 +79,17 @@ santas.each do |i|
   i.print_information
 end 
  
-charles = Santa.new("queer", "black")
-charles.get_mad_at("Rudolph")
-charles.gender = "Latinx"
-charles.print_information
-p charles.ethnicity
-p charles.age 
+# charles = Santa.new("queer", "black")
+# charles.get_mad_at("Rudolph")
+# charles.gender = "Latinx"
+# charles.print_information
+# p charles.ethnicity
+# p charles.age 
+
+500.times do 
+  santas << Santa.new(example_genders.sample, example_ethnicities.sample)
+end 
+
+santas.each do |i|
+  i.print_information
+end 
