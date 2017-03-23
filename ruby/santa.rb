@@ -32,6 +32,11 @@ class Santa
     p @reindeer_ranking
   end 
 
+  def gender=(new_gender)
+    @gender = new_gender
+  end 
+
+
 end
 
 # clause = Santa.new 
@@ -64,3 +69,5 @@ end
  
 charles = Santa.new("queer", "black")
 charles.get_mad_at("Rudolph")
+charles.gender = "Latinx"
+charles.print_information
