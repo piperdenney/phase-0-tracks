@@ -79,6 +79,12 @@ until flower_instances == 50
   flower_instances += 1
 end 
 
+garden.each do |flower|
+  flower.photosynthesize
+  flower.respirate
+end 
+
+
 
 # pansy =  Flower.new
 # pansy.photosynthesize
