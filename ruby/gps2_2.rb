@@ -35,21 +35,71 @@ def add_item(hash_list, new_item, quantity = 1)
 end
 
 # Method to remove an item from the list
-# input:
+# input: hash list, item
 # steps:
-# output:
+  # delete item form the list
+# output: # outputs updated hash
+
+def remove_item(hash_list, item)
+  hash_list.delete(item)
+  p hash_list
+end
 
 # Method to update the quantity of an item
-# input:
+# input: hash list, item, quantity
 # steps:
-# output:
+  # addeds quanity to existing item
+  # add if statement to check for item in hash
+# output: outputs hash with updated quantity
+def update_quantity(hash_list, item, quantity)
+  if hash_list.has_key?(item)
+    hash_list[item] = quantity
+    puts "updated #{item} with quantity of: #{quantity}"
+  else
+    puts "item not found."
+    puts "please enter a item in the list."
+  end
+  p hash_list
+end
 
 # Method to print a list and make it look pretty
-# input:
+# input: hash list 
 # steps:
+  # 
 # output:
+# testing array decon idea
+# def pretty_list(hash_list)
+#   items = []
+#   quantities = []
+#   hash_list.each do |item, quantity|  
+#     items.push(item) 
+#     quantities.push(quantity)
+#     end
+#     p items
+#     p quantities
+#   items.each do |item|
+#     puts "the item: #{item}."
+#   end
+# end
 
+# with a do looop
+# def pretty_list(hash_list)
+#   hash_list.each do |item, quantity| 
+#     puts "the item: #{item}, the quantity is: #{quantity}"
+#   end
+# end
+
+def pretty_list(hash_list)
+  puts "Here your GROCERY LIST!!!!"
+  puts "--------------------------------------"
+  hash_list.each { |item, quantity| puts "the item: #{item}, the quantity is: #{quantity}" }
+  puts "--------------------------------------"
+end
 
 #DRIVER CODE-------------------
 
 original_list = create_list("carrots apples cereal pizza")
+original_list = add_item(original_list, "soda", 4000)
+remove_item(original_list, 'soda')
+update_quantity(original_list, "soda", 6)
+pretty_list(original_list)
