@@ -3,13 +3,20 @@ var names = ["Prince Charles", "Henry", "Ed", "Starbucks"];
 
 colors.push("yellow");
 console.log(colors);
-names.push("Dolly");
-console.log(names);
+// names.push("Dolly");
+// console.log(names);
+
+
 
 horses = {};
-
-for(i = 0; i < names.length; i++) {
-	horses[names[i]] = colors[i];
+if (names.length == colors.length) {
+	for(i = 0; i < names.length; i++) {
+		horses[names[i]] = colors[i];
+	}
+} else {
+  console.log("Arrays are different lengths");	
 }
+
+
 console.log(horses);
 
