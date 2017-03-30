@@ -17,6 +17,23 @@ if (names.length == colors.length) {
   console.log("Arrays are different lengths");	
 }
 
-
 console.log(horses);
 
+
+function Car(model, year, is_good_car) {
+	this.model = model;
+	this.year = year;
+	this.age = 2017 - year;
+	this.is_good_car = is_good_car;
+	this.ride = function() { console.log("Let's Go!"); };
+
+	console.log("Car Initialization Complete");
+}
+
+var car = new Car("Toyota", 2003, true)
+car.ride();
+console.log(car);
+
+var another_car = new Car("Honda", 1998, true)
+another_car.ride();
+console.log(another_car);
