@@ -7,8 +7,9 @@ console.log(colors);
 // console.log(names);
 
 
-
+//Create empty horse object
 horses = {};
+//if conditional if length of both arrays is the same
 if (names.length == colors.length) {
 	for(i = 0; i < names.length; i++) {
 		horses[names[i]] = colors[i];
@@ -16,10 +17,11 @@ if (names.length == colors.length) {
 } else {
   console.log("Arrays are different lengths");	
 }
-
 console.log(horses);
 
 
+
+// Create constructor function
 function Car(model, year, is_good_car) {
 	this.model = model;
 	this.year = year;
@@ -30,6 +32,7 @@ function Car(model, year, is_good_car) {
 	console.log("Car Initialization Complete");
 }
 
+// Driver Code, create instances of car
 var car = new Car("Toyota", 2003, true)
 car.ride();
 console.log(car);
