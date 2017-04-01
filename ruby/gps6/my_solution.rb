@@ -95,3 +95,14 @@ end
 
 #=======================================================================
 # Reflection Section
+
+# What are the differences between the two different hash syntaxes shown in the state_data file?
+ #One key is a string, and the keys within the nested hash are symbols.
+# What does require_relative do? How is it different from require?
+  #Require relative makes the code from one file available in another file, without specifying the whole path, like in require
+# What are some ways to iterate through a hash?
+  #.each, .map, we used .each with a block.
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+  #That they were instance variables, so we did not need to pass them in. 
+# What concept did you most solidify in this challenge?
+  #I feel like I have a better understanding of constant variables and iterating through nested hashes. Using methods in other methods.
