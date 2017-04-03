@@ -6,10 +6,10 @@
 
 function reverseString(word) {
 	var array = word.split("");
-    var reverseArray = array.reverse();
+	var reverseArray = array.reverse();
 	var reverseWord = array.join("");
 	return reverseWord;
-	if (reversedWord === word ) {
+	if (reversedWord == word ) {
 		console.log("The word is a palindrome!");
 	} else {
 		console.log(reversedWord);
@@ -27,7 +27,8 @@ function reverseString(word) {
 //Testing that the function works	
 reverse_word = reverseString("apples");
 
- console.log(reverse_word)
+
+console.log(reverse_word)
 
 
 
