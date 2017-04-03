@@ -31,7 +31,7 @@ reverse_word = reverseString("apples");
 
 
 
-//Prints the variable if 1 is equal to 1.
+// Prints the variable if 1 is equal to 1.
 // if (1 == 1) {
 //   console.log(reverse_word)
 // }
