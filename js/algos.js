@@ -1,0 +1,1 @@
+//Write a function that takes an array of words or phrases and returns the log
