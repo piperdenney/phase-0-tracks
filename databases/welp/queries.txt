@@ -1,0 +1,9 @@
+Release 2.2
+
+sqlite> SELECT * FROM users JOIN reviews ON users.id  = reviews.user_id JOIN 
+businesses ON reviews.business_id = businesses.id;
+
+
+1|Bradford|Pitt|1|4|Great time at a wedding!|1|1|1|Grundy Hollow Wedding Chapel
+2|Mandy|Kaling|2|1|Jerks towed my car!|2|2|2|Amir's Towing
+3|Angela|Jolie|3|5|Danced all night with my dog!|3|3|3|The Beagle Nightclub
