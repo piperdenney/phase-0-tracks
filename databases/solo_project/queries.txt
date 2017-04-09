@@ -1,0 +1,89 @@
+1. Display the information in one table(either table is fine)
+
+sqlite> SELECT * FROM justices;
+1|Ruth Bader Ginsburg|1993|true|1
+2|Elena Kagan|2010|true|1
+3|Sonia Sotomayor|2009|true|1
+4|Stephen Bryer|1994|true|1
+5|Anthony Kennedy|1988|true|2
+6|Clarence Thomas|1991|true|2
+7|John Roberts|2005|true|2
+8|Samuel Alito|2006|true|2
+9|Neil Gorsuch|2017|true|2
+
+----------------------------------------------------------------------------------
+
+2. Update an item that meets some condition (you can choose a condition that makes sense).
+
+
+sqlite> UPDATE justices SET current="false" WHERE party_id=2;
+
+sqlite> SELECT * FROM justices;
+
+1|Ruth Bader Ginsburg|1993|true|1
+2|Elena Kagan|2010|true|1
+3|Sonia Sotomayor|2009|true|1
+4|Stephen Bryer|1994|true|1
+5|Anthony Kennedy|1988|false|2
+6|Clarence Thomas|1991|false|2
+7|John Roberts|2005|false|2
+8|Samuel Alito|2006|false|2
+9|Neil Gorsuch|2017|false|2
+
+sqlite> UPDATE justices SET current="true" WHERE party_id=2;
+sqlite> SELECT * FROM justices;
+1|Ruth Bader Ginsburg|1993|true|1
+2|Elena Kagan|2010|true|1
+3|Sonia Sotomayor|2009|true|1
+4|Stephen Bryer|1994|true|1
+5|Anthony Kennedy|1988|true|2
+6|Clarence Thomas|1991|true|2
+7|John Roberts|2005|true|2
+8|Samuel Alito|2006|true|2
+9|Neil Gorsuch|2017|true|2
+
+----------------------------------------------------------------------------------
+3. Display the information in both tables using one query.
+
+sqlite> SELECT * FROM justices, party WHERE justices.party_id = party.id;
+
+1|Ruth Bader Ginsburg|1993|true|1|1|Democrat
+2|Elena Kagan|2010|true|1|1|Democrat
+3|Sonia Sotomayor|2009|true|1|1|Democrat
+4|Stephen Bryer|1994|true|1|1|Democrat
+5|Anthony Kennedy|1988|true|2|2|Republican
+6|Clarence Thomas|1991|true|2|2|Republican
+7|John Roberts|2005|true|2|2|Republican
+8|Samuel Alito|2006|true|2|2|Republican
+9|Neil Gorsuch|2017|true|2|2|Republican
+
+----------------------------------------------------------------------------------
+
+4. Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+
+sqlite> SELECT justices.name, party.name FROM justices JOIN party ON justices.party_id = party.id;
+
+Ruth Bader Ginsburg|Democrat
+Elena Kagan|Democrat
+Sonia Sotomayor|Democrat
+Stephen Bryer|Democrat
+Anthony Kennedy|Republican
+Clarence Thomas|Republican
+John Roberts|Republican
+Samuel Alito|Republican
+Neil Gorsuch|Republican
+
+----------------------------------------------------------------------------------
+
+
+5. Delete an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> DELETE FROM justices WHERE party_id=2;
+sqlite> SELECT * FROM justices;
+
+1|Ruth Bader Ginsburg|1993|true|1
+2|Elena Kagan|2010|true|1
+3|Sonia Sotomayor|2009|true|1
+4|Stephen Bryer|1994|true|1
+
+
